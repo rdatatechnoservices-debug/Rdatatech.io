@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/favicon.ico">
+
+    <title>RDATA – Software Development & IT Services</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="./assets/css/bootstrap-5.0.0-beta1.min.css" />
+    <link rel="stylesheet" href="./assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="./assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/lindy-uikit.css" />
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+
+      .product-banner {
+    padding: 80px 0;
+    background: #f5f7fa;
+    text-align: center;
+  }
+
+  .product-banner h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .product-banner p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  /* Slider item */
+  .product-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .product-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .product-item h4 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background-image: url('./assets/img/hero/hero-5/hero-bg.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* Hero Content */
+.hero-content-wrapper h2, .hero-content-wrapper p {
+  color: #080303;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  background: #4953de;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* Cup Container */
+.cup-container {
+  position: absolute;
+  width: 60px; /* adjust size */
+  height: 60px;
+  bottom: 120px; /* adjust to table position in hero image */
+  right: 100px;  /* adjust to table position in hero image */
+  z-index: 10;
+}
+
+/* Blue Cup */
+.cup {
+  margin-top: -110px;
+  width: 50%;
+  height: 50%;
+  background-color: #ff8b59;
+  border-radius: 20% 20% 40% 40%;
+  position: relative;
+  opacity:0.9;
+}
+
+/* Handle */
+.handle {
+  margin-top: -120px;
+  margin-right: 30px;
+  width: 15px;
+  height: 25px;
+  border: 6px solid #ff8b59;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: -12px;
+}
+
+/* Steam */
+.steam {
+  margin-top: -100px;
+  position: absolute;
+  top: -35px;
+  left: 30%;
+  width: 10px;
+  height: 40px;
+  background: transparent;
+  animation: steamRise 2s infinite;
+}
+
+.steam::before,
+.steam::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 40px;
+  background: rgb(217, 188, 181);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: steamRise 2s infinite;
+}
+
+.steam::after {
+  left: 8px;
+  animation-delay: 0.5s;
+}
+
+@keyframes steamRise {
+  0% { transform: translateY(0) scaleX(1); opacity: 0.5; }
+  50% { transform: translateY(-20px) scaleX(1.2); opacity: 1; }
+  100% { transform: translateY(-40px) scaleX(1); opacity: 0; }
+}
+
+
+
+   /* Glassmorphism Section */
+.counter {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 60px 0;
+}
+
+/* Counter Card */
+.counter .counter-item {
+  background: rgba(255, 255, 255, 0.20); /* slightly solid for visibility */
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 25px 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.counter .counter-item:hover {
+  background: rgba(255, 255, 255, 0.30);
+  box-shadow: 0px 12px 35px rgba(0,0,0,0.25);
+  transform: translateY(-6px);
+}
+
+/* Number Text (Fixed Visibility) */
+.counter .counter-item h2 {
+  color: #16e2d1;        /* stays white */
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Description Text */
+.counter .counter-item p {
+  color: rgba(44, 217, 236, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Counter Number Animation Element */
+.counter-stat {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+/* Fix columns spacing */
+.counter .row > div {
+  margin-bottom: 20px;
+}
+
+/* Optional: Make grid equal height (looks cleaner) */
+.counter .counter-item {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+  h3 {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+  .r-letter {
+    display: inline-block;
+    color: #ff7f50;
+    transform: rotate(180deg) translateY(-50px);
+    animation: fallR 3s forwards;
+  }
+
+  @keyframes fallR {
+    0% {
+      transform: rotate(180deg) translateY(-50px);
+      opacity: 0;
+    }
+    60% {
+      transform: rotate(-20deg) translateY(10px);
+      opacity: 1;
+    }
+    80% {
+      transform: rotate(10deg) translateY(-5px);
+    }
+    100% {
+      transform: rotate(0deg) translateY(0);
+    }
+  }
+
+    </style>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left">
+                <div class="spinner-circle"></div>
+              </div>
+              <div class="spinner-right">
+                <div class="spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================= preloader end ========================= -->
+
+    <!-- ========================= hero-section-wrapper-5 start ========================= -->
+    <section id="home" class="hero-section-wrapper-5">
+      <!-- ========================= header-6 start ========================= -->
+      <header class="header header-6">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo/RDATA_logo_transparent.svg" alt="Logo" style="width: 80px; height: auto;" />
+
+                  </a>
+                  <h3><span class="r-letter">R</span>DATA</h3>  
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent6"
+                    aria-controls="navbarSupportedContent6"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+
+                  <div
+                    class="collapse navbar-collapse sub-menu-bar"
+                    id="navbarSupportedContent6"
+                  >
+                    <ul id="nav6" class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="page-scroll active" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#feature">Feature</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#about">About</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#Products">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="header-action d-flex">
+                    <a href="#0"> <i class="lni lni-cart"></i> </a>
+                    <a href="#0"> <i class="lni lni-alarm"></i> </a>
+                  </div>
+                  <!-- navbar collapse -->
+                </nav>
+                <!-- navbar -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- navbar area -->
+      </header>
+      <!-- ========================= header-6 end ========================= -->
+
+      <!-- ========================= hero-5 start ========================= -->
+      
+<div class="hero-section hero-style-5 img-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="hero-content-wrapper">
+          <h2 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Gen AI Led Software Development</h2>
+          <p class="mb-30 wow fadeInUp" data-wow-delay=".4s">Future-ready software powered by Gen AI — faster, smarter, and built to scale.</p>
+          <!-- <a href="#0" class="button button-lg radius-50 wow fadeInUp" data-wow-delay=".6s">Get Started <i class="lni lni-chevron-right"></i></a> -->
+        </div>
+      </div>
+      <div class="col-lg-6 align-self-end">
+        <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
+          <img src="./assets/img/hero/hero-5/hero-img.svg" alt="" />
+          <!-- Coffee Cup Overlay -->
+          <div class="cup-container">
+            <div class="cup"></div>
+            <div class="handle"></div>
+            <div class="steam"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- ========================= hero-5 end ========================= -->
+    </section>
+    <!-- ========================= hero-section-wrapper-6 end ========================= -->
+
+    <!-- ========================= feature style-5 start ========================= -->
+    <section id="feature" class="feature-section feature-style-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-8">
+            <div class="section-title text-center mb-60">
+              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">
+                Services We Offer
+              </h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                We handle everything — design, development, cloud setup,
+                databases, security, and maintenance — so you can focus on
+                growing your business.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="icon">
+                <i class="lni lni-cloud"></i>
+                <svg
+                  width="110"
+                  height="72"
+                  viewBox="0 0 110 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                    fill="#EBF4FF"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h5>Cloud deployment (AWS & Azure)</h5>
+                <p>
+                  We build and manage cloud infrastructures using AWS, Azure,
+                  and Linux environments. Our expertise includes VPS hosting,
+                  CI/CD pipelines, scalable architectures, load balancing, API
+                  deployments, security hardening, and automated backups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+              <div class="icon">
+                <i class="lni lni-database"></i>
+                <svg
+                  width="110"
+                  height="72"
+                  viewBox="0 0 110 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                    fill="#EBF4FF"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h5>Database hosting & backups</h5>
+                <p>
+                  Secure, scalable database hosting with optimized performance,
+                  automated backups, and 24/7 data protection,We ensure your
+                  databases are hosted securely, run smoothly, and are backed up
+                  automatically so your data is always protected.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+              <div class="icon">
+                <i class="lni lni-stats-up"></i>
+                <svg
+                  width="110"
+                  height="72"
+                  viewBox="0 0 110 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                    fill="#EBF4FF"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h5>Business Analysis</h5>
+                <p>
+                  Our Business Analysis services include requirement gathering,
+                  workflow mapping, user journey design, documentation, and
+                  solution planning. We ensure each project has a strong
+                  technical and business foundation before development begins.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="icon">
+                <i class="lni lni-code-alt"></i>
+                <svg
+                  width="110"
+                  height="72"
+                  viewBox="0 0 110 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                    fill="#EBF4FF"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h5>Web Development</h5>
+                <p>
+                  Your website is the face of your business. We design and
+                  develop websites that are fast, engaging, and built to convert
+                  visitors into customers. Every site is optimized for
+                  performance, SEO, and mobile responsiveness.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+              <div class="icon">
+                <i class="lni lni-mobile"></i>
+                <svg
+                  width="110"
+                  height="72"
+                  viewBox="0 0 110 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                    fill="#EBF4FF"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h5>Mobile Applications</h5>
+                <p>
+                  We build powerful, fast, and user-friendly applications to
+                  your business goals. Using modern technologies like React
+                  Native, we create cross-platform apps that work seamlessly on
+                  both Android and iOS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+              <div class="icon">
+                <i class="lni lni-code"></i>
+                <svg
+                  width="110"
+                  height="72"
+                  viewBox="0 0 110 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                    fill="#EBF4FF"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h5>Web Design</h5>
+                <p>
+                  Good design isn’t just about looks — it’s about results. We
+                  craft interfaces that capture attention, reduce complexity,
+                  and guide users toward meaningful actions. Beautiful, fast,
+                  and user-centered.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= feature style-5 end ========================= -->
+
+    <!-- ========================= about style-4 start ========================= -->
+    <section id="about" class="about-section about-style-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6">
+            <div class="about-content-wrapper">
+              <div class="section-title mb-30">
+                <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                  Our Work
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay=".3s">
+                  We design and deliver complete software solutions using modern technologies like .NET, React, JavaScript, PHP, Mobile Apps, and Cloud Platforms. From idea to launch, we ensure fast, scalable, and secure development tailored to your business needs.
+                </p>
+              </div>
+              <ul>
+                <li class="wow fadeInUp" data-wow-delay=".35s">
+                  <i class="lni lni-checkmark-circle"></i>
+                 Our team builds high-performance web, mobile, and cloud applications optimized for speed, security, and user experience. Every project follows best coding standards, ensuring long-term reliability and easy scalability as your business grows.
+                </li>
+                <li class="wow fadeInUp" data-wow-delay=".4s">
+                  <i class="lni lni-checkmark-circle"></i>
+                  We work closely with clients, understand their goals, and deliver solutions that bring measurable business value. Clear communication, on-time delivery, 24/7 support, and result-driven development make us a trusted technology partner for startups and enterprises.
+                </li>
+                <!-- <li class="wow fadeInUp" data-wow-delay=".45s">
+                  <i class="lni lni-checkmark-circle"></i>
+                  Stop wasting time and money designing and managing a website
+                  that doesn’t get results.
+                </li> -->
+              </ul>
+              <a
+                href="#0"
+                class="button button-lg radius-10 wow fadeInUp"
+                data-wow-delay=".5s"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-6">
+            <div
+              class="about-image text-lg-right wow fadeInUp"
+              data-wow-delay=".5s"
+            >
+              <img src="./assets/img/about/about-4/about-img.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= about style-4 end ========================= -->
+
+    <!-- ========================= pricing style-4 start ========================= -->
+    <!-- <section id="pricing" class="pricing-section pricing-style-4 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6">
+            <div class="section-title mb-60">
+              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Pricing Plan</h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s">Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-6">
+            <div class="pricing-active-wrapper wow fadeInUp" data-wow-delay=".4s">
+              <div class="pricing-active">
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    <h6>Basic Design</h6>
+                    <h4>Web Design</h4>
+                    <h3>$ 29.00</h3>
+                    <ul>
+                      <li>Carefully crafted components</li>
+                      <li>Amazing page examples</li>
+                      <li>Super friendly support team</li>
+                      <li>Awesome Support</li>
+                    </ul>
+                    <a href="#0" class="button radius-30">Get Started</a>
+                  </div>
+                </div>
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    <h6>Standard Design</h6>
+                    <h4>Web Development</h4>
+                    <h3>$ 89.00</h3>
+                    <ul>
+                      <li>Carefully crafted components</li>
+                      <li>Amazing page examples</li>
+                      <li>Super friendly support team</li>
+                      <li>Awesome Support</li>
+                    </ul>
+                    <a href="#0" class="button radius-30">Get Started</a>
+                  </div>
+                </div>
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    <h6>Pro Design</h6>
+                    <h4>Design & Develop</h4>
+                    <h3>$ 199.00</h3>
+                    <ul>
+                      <li>Carefully crafted components</li>
+                      <li>Amazing page examples</li>
+                      <li>Super friendly support team</li>
+                      <li>Awesome Support</li>
+                    </ul>
+                    <a href="#0" class="button radius-30">Get Started</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+     
+    <!-- section Counter Start -->
+    <section class="section counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-item text-center mb-5 mb-lg-0">
+              <h2 class="mb-0">
+                <span class="counter-stat font-weight-bold" data-target="10"
+                  >0</span
+                >
+                +
+              </h2>
+              <p>Successful Projects Delivered</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-item text-center mb-5 mb-lg-0">
+              <h2 class="mb-0">
+                <span class="counter-stat font-weight-bold" data-target="50"
+                  >0</span
+                >
+                +
+              </h2>
+              <p>Active Users & Clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-item text-center mb-5 mb-lg-0">
+              <h2 class="mb-0">
+                <span class="counter-stat font-weight-bold" data-target="5"
+                  >0</span
+                >
+                +
+              </h2>
+              <p>Countries Reached</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-item text-center">
+              <h2 class="mb-0">
+                <span class="counter-stat font-weight-bold" data-target="3"
+                  >0</span
+                >
+                +
+              </h2>
+              <p>Industry Awards / Recognitions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section Counter End  -->
+    <!-- ========================= pricing style-4 end ========================= -->
+
+    <!-- ========================= contact-style-3 start ========================= -->
+    <section id="contact" class="contact-section contact-style-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-10">
+            <div class="section-title text-center mb-50">
+              <h3 class="mb-15">Get in touch</h3>
+              <p>
+                Our support and service team is available 24/7 to ensure your
+                business operations never slow down. Contact us anytime for
+                expert assistance or project consultations!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-form-wrapper">
+              <form action="" method="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-input"
+                        placeholder="Name"
+                      />
+                      <i class="lni lni-user"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="Email"
+                      />
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input
+                        type="text"
+                        id="number"
+                        name="number"
+                        class="form-input"
+                        placeholder="Number"
+                      />
+                      <i class="lni lni-phone"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="form-input"
+                        placeholder="Subject"
+                      />
+                      <i class="lni lni-text-format"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single-input">
+                      <textarea
+                        name="message"
+                        id="message"
+                        class="form-input"
+                        placeholder="Message"
+                        rows="6"
+                      ></textarea>
+                      <i class="lni lni-comments-alt"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-button">
+                      <button type="submit" class="button">
+                        <i class="lni lni-telegram-original"></i> Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="col-lg-4">
+            <div class="left-wrapper">
+              <div class="row">
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-phone"></i>
+                    </div>
+                    <div class="text">
+                      <!-- <p>0045939863784</p>
+                      <p>+004389478327</p> -->
+                      <p>Provide Soon...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                    <div class="text">
+                      <p>rdatatechnoservices@gmail.com</p>
+                      <!-- <p>admin@yourwebsite.com</p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-map-marker"></i>
+                    </div>
+                    <div class="text">
+                      <p>Sangli Office(Remote)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= contact-style-3 end ========================= -->
+
+    <!-- ========================= clients-logo start ========================= -->
+   
+<section id="Products" class="product-banner">
+  <div class="container">
+    <h2>Our Digital Products</h2>
+    <p>We offer a wide range of modern and scalable digital products designed to help businesses grow faster and operate smarter. Each solution is built with powerful features, clean design, and seamless user experience.</p>
+
+    <!-- Swiper Slider -->
+    <div class="swiper myProductSlider">
+      <div class="swiper-wrapper">
+
+        <!-- Product 1 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="./assets/img/products/ecomm.gif" alt="E-commerce">
+            <h4>E-Commerce Platform</h4>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="./assets/img/products/social.gif" alt="Social Media">
+            <h4>Social Media Website</h4>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="./assets/img/products/jobportal.gif" alt="Job Portal">
+            <h4>Job Portal Application</h4>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="./assets/img/products/House.gif" alt="House Broker">
+            <h4>House Broker Application</h4>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="./assets/img/products/ERP.gif" alt="ERP">
+            <h4>ERP Management System</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ========================= clients-logo end ========================= -->
+
+    <!-- ========================= footer style-4 start ========================= -->
+    <footer class="footer footer-style-4">
+      <div class="container">
+        <div class="widget-wrapper">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+                <div class="logo">
+                  <a href="#0">
+                      <img src="./assets/img/logo/RDATA_logo_transparent.svg" alt="Logo" style="width: 50px; height: auto;" />
+                  </a>
+                   <h4><span class="r-letter">R</span>DATA</h4>  
+                </div>
+                <p class="desc">
+                  Our mission is to support businesses with dependable resources
+                  and expert services, ensuring they have the tools, guidance,
+                  and technology needed to succeed in a fast-evolving digital
+                  world.
+                </p>
+               <ul class="socials">
+                <li>
+                  <a href="./404.html" target="_blank" rel="noopener">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./404.html" target="_blank" rel="noopener">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./404.html" target="_blank" rel="noopener">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com/in/rdata-technoservices-810b1337a/" target="_blank" rel="noopener">
+                    <i class="lni lni-linkedin-original"></i>
+                  </a>
+                </li>
+              </ul>
+
+              </div>
+            </div>
+            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
+                <h6>Quick Link</h6>
+                <ul class="links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#Products">Service</a></li>
+                  <li><a href="./404.html">Testimonial</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+                <h6>Services</h6>
+                <ul class="links">
+                  <li><a href="./404.html">Web Design</a></li>
+                  <li><a href="./404.html">Web Development</a></li>
+                  <li><a href="./404.html">Seo Optimization</a></li>
+                  <li><a href="./404.html">Blog Writing</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
+                <h6>Social platforms</h6>
+                <ul class="download-app">
+                  <li>
+                    <a href="./404.html">
+                      <span class="icon"
+                        ><i class="lni lni-instagram-filled"></i
+                      ></span>
+                      <span class="text">Instagram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/rdata-technoservices-810b1337a/" target="_blank">
+                      <span class="icon">
+                        <i class="lni lni-linkedin-original"></i>
+                      </span>
+                      <span class="text">LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <p>
+            Design and Developed by
+            <a href="#" rel="nofollow" target="_blank"
+              >Aniket Kavathekar - RDATA (Software Developer)</a
+            >
+            
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ========================= footer style-4 end ========================= -->
+
+    <!-- ========================= scroll-top start ========================= -->
+    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+    <!-- ========================= scroll-top end ========================= -->
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".myProductSlider", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 1800,
+    },
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      480: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+      1200: { slidesPerView: 5 }
+    }
+  });
+</script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".counter-stat");
+        const speed = 150; // animation speed (lower = faster)
+
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+
+            const increment = target / speed;
+
+            if (count < target) {
+              counter.innerText = Math.ceil(count + increment);
+              setTimeout(updateCount, 20);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          // Start animation when counter section appears in viewport
+          const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+              updateCount();
+              observer.disconnect();
+            }
+          });
+
+          observer.observe(counter);
+        });
+      });
+    </script>
+    <script>
+      let text = " RDATA – Software Development & IT Services ";
+      let i = 0;
+
+      function scrollTitle() {
+        document.title = text.substring(i) + text.substring(0, i);
+        i = (i + 1) % text.length;
+        setTimeout(scrollTitle, 200);
+      }
+
+      scrollTitle();
+  </script>
+  </body>
+</html>
